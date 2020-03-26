@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "718169839767",
+    "firebase_url": "https://save-my-place-dd611.firebaseio.com",
+    "project_id": "save-my-place-dd611",
+    "storage_bucket": "save-my-place-dd611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718169839767:android:73470b7d36b050e7ea71d2",
+        "android_client_info": {
+          "package_name": "com.example.savemyplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718169839767-q01pmhoaue2p6aug6aodqshuc7tt093f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE3I52vZJsENr0dWc1uH6sem5CIRh_WiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718169839767-q01pmhoaue2p6aug6aodqshuc7tt093f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
