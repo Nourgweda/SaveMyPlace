@@ -10,4 +10,7 @@
     <string name="ok">Ok</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
+    <string name="title_activity_home_">Map</string>
+    <string name="title_activity_home_activity">Map</string>
+    <string name="dropped_pin">Dropped_pin</string>
 </resources>
