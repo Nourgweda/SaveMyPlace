@@ -13,4 +13,12 @@
     <string name="title_activity_home_">Map</string>
     <string name="title_activity_home_activity">Map</string>
     <string name="dropped_pin">Dropped_pin</string>
+    <string name="add_my_place">Add to my places</string>
+    <string name="add_my_wishlist">Add to my wishlist</string>
+    <string name="write_details">Write the place details </string>
+    <string name="place_name">Write the place\'s name </string>
+    <string name="place_description">Write the place\'s description </string>
+    <string name="select_date">Select the date</string>
+    <string name="show_date"></string>
+    <string name="done">done</string>
 </resources>
