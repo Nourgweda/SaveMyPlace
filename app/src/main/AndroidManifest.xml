@@ -29,9 +29,7 @@
 
         <activity
             android:name=".home_activity"
-            android:label="@string/title_activity_home_activity">
-
-        </activity>
+            android:label="@string/title_activity_home_activity" />
         <activity android:name=".splash_Activity" />
         <activity android:name=".signup_Activity" />
         <activity android:name=".MainActivity" />
