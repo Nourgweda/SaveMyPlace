@@ -3,86 +3,122 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
     tools:context=".wishlist_alert_dialog">
 
     <TextView
         android:id="@+id/details_title_text_view_wish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
         android:fontFamily="cursive"
         android:text="@string/write_details"
         android:textColor="@color/blue"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_margin="20dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/place_name_edit_text_wish"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/details_title_text_view_wish"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/place_name"
         android:layout_marginLeft="30dp"
-        android:gravity="center"
-        android:layout_marginRight="30dp"
         android:layout_marginTop="25dp"
-        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text_background"
         android:fontFamily="cursive"
-        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/place_name"
         android:textColor="@color/blue"
-        android:background="@drawable/edit_text_background" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_title_text_view_wish" />
 
     <TextView
         android:id="@+id/year_text_view_wish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/year_edit_text_wish"
-        app:layout_constraintBottom_toBottomOf="@id/year_edit_text_wish"
-        app:layout_constraintStart_toStartOf="@id/place_name_edit_text_wish"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="cursive"
         android:text="@string/year_date"
         android:textColor="@color/blue"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintBottom_toBottomOf="@id/year_edit_text_wish"
+        app:layout_constraintStart_toStartOf="@id/place_name_edit_text_wish"
+        app:layout_constraintTop_toTopOf="@id/year_edit_text_wish" />
 
     <EditText
         android:id="@+id/year_edit_text_wish"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/place_name_edit_text_wish"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/year"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/year_text_view_wish"
-        android:text="@string/year"
-        android:layout_marginLeft="30dp"
-        android:gravity="center"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:background="@drawable/edit_text_background" />
+        app:layout_constraintTop_toBottomOf="@id/place_name_edit_text_wish" />
 
     <TextView
         android:id="@+id/map_details_text_view_wish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/year_text_view_wish"
-        tools:text="@string/year_date"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"/>
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/year_text_view_wish"
+        tools:text="@string/year_date" />
 
+    <Button
+        android:id="@+id/done_button_view_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="cursive"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_button_view_wish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/year_text_view_wish" />
 
+    <Button
+        android:id="@+id/cancel_button_view_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="cursive"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/done_button_view_wish"
+        app:layout_constraintTop_toBottomOf="@id/year_text_view_wish" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,126 +4,151 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/details_title_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:fontFamily="cursive"
-        android:text="@string/write_details"
-        android:textColor="@color/blue"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_margin="20dp"/>
 
-    <EditText
-        android:id="@+id/place_name_edit_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/details_title_text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/place_name"
-        android:layout_marginLeft="30dp"
-        android:gravity="center"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:background="@drawable/edit_text_background" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/place_description_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/place_name_edit_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/place_description"
-        android:layout_marginLeft="30dp"
-        android:gravity="center"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:background="@drawable/edit_text_background" />
+        <TextView
+            android:id="@+id/details_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/write_details"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/select_date_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="@string/select_date"
-        android:textColor="@color/blue"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/place_description_edit_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="20dp" />
+        <EditText
+            android:id="@+id/place_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/place_name"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_title_text_view" />
 
-    <DatePicker
-        android:id="@+id/date_picker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"
-        android:calendarViewShown="false"
-        android:layout_margin="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/select_date_text_view" />
+        <EditText
+            android:id="@+id/place_description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/place_description"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_name_edit_text" />
 
-    <TextView
-        android:id="@+id/date_picker_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date_picker"
-        android:fontFamily="cursive"
-        android:text="@string/show_date"
-        android:textColor="@color/blue"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:background="@drawable/edit_text_background"
-        android:layout_margin="20dp"
-        android:visibility="gone"/>
+        <TextView
+            android:id="@+id/select_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="cursive"
+            android:text="@string/select_date"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_description_edit_text" />
 
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_date_text_view" />
 
-    <Button
-        android:id="@+id/done_button_view"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/button_background"
-        android:fontFamily="cursive"
-        android:text="@string/done"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date_picker_text_view" />
-
-
-
+        <TextView
+            android:id="@+id/date_picker_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="cursive"
+            android:text="@string/show_date"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_picker" />
 
 
+        <Button
+            android:id="@+id/done_button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="cursive"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel_button_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_picker_text_view" />
 
 
+        <Button
+            android:id="@+id/cancel_button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="cursive"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/done_button_view"
+            app:layout_constraintTop_toBottomOf="@id/date_picker_text_view" />
+
+        <TextView
+            android:id="@+id/map_details_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/cancel_button_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/year_date" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
