@@ -1,6 +1,7 @@
 package com.example.savemyplace
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +57,10 @@ class home_activity : AppCompatActivity(), OnMapReadyCallback {
         setMapLongClick(map)
         setPoiClick(map)
         enableMyLocation()
+        //my edition
+//        val intent = Intent(this, tryActivity::class.java)
+//        intent.putExtra("username", setPoiClick(map).toString())
+//        startActivity(intent)
 
     }
 
@@ -73,7 +78,11 @@ class home_activity : AppCompatActivity(), OnMapReadyCallback {
                             .position(latLng)
                             .title(getString(R.string.dropped_pin))
                             .snippet(snippet)
+
             )
+            val intent = Intent(this, tryActivity::class.java)
+            intent.putExtra("username", snippet.toString())
+            startActivity(intent)
         }
     }
 

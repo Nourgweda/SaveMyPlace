@@ -15,6 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".wishlist_alert_dialog"></activity>
+        <activity android:name=".wish_list_activity" />
+        <activity android:name=".save_place_activity" />
+        <activity android:name=".tryActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -29,17 +33,17 @@
 
         <activity
             android:name=".home_activity"
-            android:label="@string/title_activity_home_activity" />
-        <activity android:name=".splash_Activity" />
-        <activity android:name=".signup_Activity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".place_details_alert_dialog">
+            android:label="@string/title_activity_home_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".splash_Activity" />
+        <activity android:name=".signup_Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".place_details_alert_dialog" />
     </application>
 
 </manifest>

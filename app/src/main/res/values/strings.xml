@@ -21,4 +21,6 @@
     <string name="select_date">Select the date</string>
     <string name="show_date"></string>
     <string name="done">done</string>
+    <string name="year">2020</string>
+    <string name="year_date">Expected date</string>
 </resources>
